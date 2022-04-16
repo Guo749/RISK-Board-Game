@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.duke.group1.client.GameLoseController">
+    <children>
+        <SplitPane dividerPositions="0.6474960876369327" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="422.0">
+                    <children>
+                        <SplitPane dividerPositions="0.7689393939393939" layoutX="118.0" layoutY="-7.0" orientation="VERTICAL" prefHeight="398.0" prefWidth="430.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <items>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                    <children>
+                                        <ImageView fx:id="myView" fitHeight="615.0" fitWidth="963.0" pickOnBounds="true" preserveRatio="true">
+
+                                        </ImageView>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                    <children>
+                                        <Button fx:id="switchRoom" layoutX="402.0" layoutY="26.0" mnemonicParsing="false" onAction="#hitSwitch" prefHeight="118.0" prefWidth="242.0" text="Switch Room">
+                                 <font>
+                                    <Font size="27.0" />
+                                 </font></Button>
+                                        <Button fx:id="refresh" layoutX="133.0" layoutY="27.0" mnemonicParsing="false" onAction="#hitRefresh" prefHeight="119.0" prefWidth="186.0" text="Finish">
+                                            <font>
+                                                <Font size="41.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </AnchorPane>
+                            </items>
+                        </SplitPane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="798.0" prefWidth="428.0">
+                    <children>
+                        <TextArea fx:id="textArea" layoutX="-10.0" layoutY="56.0" prefHeight="398.0" prefWidth="161.0" text="" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </TextArea>
+                    </children></AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

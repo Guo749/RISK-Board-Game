@@ -1,0 +1,20 @@
+.button{
+    background-color: yellow;
+}
+
+.expandable{
+    -fx-background-color: Azure;
+    -fx-border-color: black;
+}
+
+.expandableWithoutBoard{
+    -fx-background-color: Azure;
+}
+#signup{
+    -fx-background-color: Azure;
+}
+
+#login{
+    -fx-background-color: Azure;
+}
+

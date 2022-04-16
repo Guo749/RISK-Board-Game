@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.testfx:openjfx-monocle:jdk-12.0.1+2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testfx/openjfx-monocle/jdk-12.0.1+2/f2e6ce15c4e09b8ff52964a4c05cd6a01a6b55b8/openjfx-monocle-jdk-12.0.1+2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testfx/openjfx-monocle/jdk-12.0.1+2/9b4f0fb0f78193909bef9ce1d65465cb712d8692/openjfx-monocle-jdk-12.0.1+2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

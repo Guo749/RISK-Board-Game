@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.duke.group1.client.PlayController">
+    <children>
+        <SplitPane dividerPositions="0.5082159624413145" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="422.0">
+                    <children>
+                        <SplitPane dividerPositions="0.4591708542713568" layoutX="118.0" layoutY="-7.0" orientation="VERTICAL" prefHeight="398.0" prefWidth="430.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <items>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="360" prefWidth="640">
+                                    <children>
+                                        <ImageView fx:id="myView" pickOnBounds="true" preserveRatio="true">
+                                        </ImageView>
+                              <Circle fx:id="circle1" fill="DODGERBLUE" layoutX="187.0" layoutY="90.0" radius="22.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Circle fx:id="circle2" fill="DODGERBLUE" layoutX="145.0" layoutY="168.0" radius="22.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Circle fx:id="circle3" fill="DODGERBLUE" layoutX="187.0" layoutY="261.0" radius="22.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Circle fx:id="circle6" fill="DODGERBLUE" layoutX="415.0" layoutY="85.0" radius="22.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Circle fx:id="circle5" fill="DODGERBLUE" layoutX="465.0" layoutY="168.0" radius="22.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Circle fx:id="circle4" fill="DODGERBLUE" layoutX="411.0" layoutY="263.0" radius="22.0" stroke="BLACK" strokeType="INSIDE" />
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <SplitPane dividerPositions="0.6176470588235294" layoutX="143.0" layoutY="35.0" orientation="VERTICAL" prefHeight="427.0" prefWidth="644.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <items>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                       <children>
+                                                    <Button fx:id="move" layoutX="36.0" layoutY="32.0" mnemonicParsing="false" onAction="#hitMove" prefHeight="92.0" prefWidth="102.0" text="Move">
+                                                        <font>
+                                                            <Font size="21.0" />
+                                                        </font>
+                                                    </Button>
+                                                    <Button fx:id="finish" layoutX="158.0" layoutY="32.0" mnemonicParsing="false" onAction="#hitFinish" prefHeight="92.0" prefWidth="102.0" text="Finish">
+                                                        <font>
+                                                            <Font size="21.0" />
+                                                        </font>
+                                                    </Button>
+                                                    <Button fx:id="upgrade" layoutX="284.0" layoutY="30.0" mnemonicParsing="false" onAction="#hitUpgrade" prefHeight="92.0" prefWidth="135.0" text="Upgrade Unit">
+                                                        <font>
+                                                            <Font size="16.0" />
+                                                        </font>
+                                                    </Button>
+                                                    <Button fx:id="attack" layoutX="452.0" layoutY="31.0" mnemonicParsing="false" onAction="#hitAttack" prefHeight="92.0" prefWidth="117.0" text="Attack">
+                                                        <font>
+                                                            <Font size="21.0" />
+                                                        </font>
+                                                    </Button>
+                                          <Button layoutX="58.0" layoutY="147.0" mnemonicParsing="false" onAction="#hitTechLevel" prefHeight="68.0" prefWidth="221.0" text="upgrade tech level" />
+                                                    <Button fx:id="switchRoom" layoutX="354.0" layoutY="141.0" mnemonicParsing="false" onAction="#hitSwitch" prefHeight="68.0" prefWidth="152.0" text="Switch Room" />
+                                       </children>
+                                    </AnchorPane>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                       <children>
+                                          <ListView fx:id="actions" layoutX="109.0" layoutY="-44.0" prefHeight="159.0" prefWidth="642.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                       </children>
+                                    </AnchorPane>
+                                </items>
+                              </SplitPane>
+                           </children>
+                                </AnchorPane>
+                            </items>
+                        </SplitPane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="798.0" prefWidth="428.0">
+                    <children>
+                        <TextArea fx:id="textArea" layoutX="-10.0" layoutY="56.0" prefHeight="398.0" prefWidth="161.0" text="" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </TextArea>
+                    </children></AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>
